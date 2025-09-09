@@ -5,25 +5,25 @@ It integrates RAG (Retrieval-Augmented Generation), LangGraph workflows, and a c
 
 📂 Project Structure
 
-architecture.py
+architecture.py-
 Contains the LangGraph architecture that powers the AI agent's reasoning and workflow.
 
-prompts.py
+prompts.py-
 Centralized storage of prompts used by the architecture for generating responses.
 
-front_end.py
+front_end.py-
 The user-facing frontend code for interacting with Workmate.ai.
 
-rag_tool_test.ipynb
+rag_tool_test.ipynb-
 Jupyter Notebook for building and experimenting with vector stores for RAG integration.
 
-server.py
+server.py-
 Backend server setup that handles API requests and routes between the frontend and AI core.
 
-server_utilities.py
+server_utilities.py-
 Utility functions to support server operations and manage communication with the AI system.
 
-test.py
+test.py-
 Testing file currently implementing chat deletion functionality. More features will be added here progressively.
 
 🚀 Features
