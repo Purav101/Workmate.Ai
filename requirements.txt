@@ -1,0 +1,10 @@
+fastapi
+pydantic
+uvicorn
+langchain
+langchain-chroma
+langchain-huggingface
+pymongo
+requests
+streamlit
+pandas
