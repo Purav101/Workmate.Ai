@@ -21,7 +21,7 @@ def format_docs(retrieved_docs):
 
 #initializing model
 #initializing embeddings model
-"""
+
 model_name ="BAAI/bge-large-en"
 model_kwargs = {'device': 'cuda'}
 encode_kwargs = {'normalize_embeddings':False}
@@ -36,7 +36,7 @@ embeddings =  HuggingFaceEmbeddings(
 load_vectore_store= Chroma(persist_directory="stores3/temple_cosine3",embedding_function=embeddings)
 retriever= load_vectore_store.as_retriever(search_type="mmr",search_kwargs={"k":6})
 context_chain = RunnableSequence(retriever,RunnableLambda(format_docs))
-"""
+
 app= FastAPI()
 
 class embedding(BaseModel):
@@ -166,4 +166,5 @@ def delete_field(state:database_query):
                              {"$unset":{state.field:""}})
        return  {"message": "success"}
     except:
+
          return {"message": "failed"}
