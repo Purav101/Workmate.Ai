@@ -57,13 +57,13 @@ def home():
     return {"message":"Welcome to home page"}
 
 
-"""
+
 @app.post("/get-context")
 def get_context(que:embedding):
     query = que.query
     response = context_chain.invoke(query)
     return {"message":response} 
-"""
+
 @app.post("/create-user",description= createUser)
 def create_user(state:database_query):
     try :
@@ -168,3 +168,4 @@ def delete_field(state:database_query):
     except:
 
          return {"message": "failed"}
+
